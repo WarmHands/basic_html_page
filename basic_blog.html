@@ -1,79 +1,72 @@
 <!DOCTYPE html>
 <head>
-	<link href="/normalize.css" rel="stylesheet">
+	
+	<meta charset="utf-8">
 	<style>
-	header {
-		text-align: center;
-		background: url('http://dash.ga.co/assets/jeff-bg.png');
-		background-size: cover;
-		color: white;
-	}
-	a {
-		color: white;
-	}
-	h1 {
-		font-size: 70px;
-	}
-	img {
-		margin: 40px 0px 0px 0px;
-		border: 7px solid white;
-		border-radius: 20px;
-	}
-	ul {
-		padding: 10px;
-		background: rgba(0,0,0,0.5);
-	}
-	li {
-		display: inline;
-		padding: 0px 10px 0px 10px;
-	}
-	article {
-		max-width: 500px;
-		padding: 20px;
-		margin: 0 auto;
-	}
-	@media (max-width: 500px) {
+		header {
+			text-align: center;
+			background: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg');
+			background-size: contain;
+		}
+		a {
+			color: white;
+		}
 		h1 {
-		font-size: 36px;  
+			font-size: 70px;
+			text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+		}
+		img {
+			width: 25%;
+			height: 25%;
+			margin: 40px 0px 0px 0px;
+		}
+		ul {
+			padding: 10px;
+			background: rgba(0,0,0,0.5);
 		}
 		li {
-		display: block;
-		padding: 5px;
+			display: inline;
+			padding: 0px 10px 0px 10px;
 		}
-	}
+		article {
+			max-width: 500px;
+			padding: 20px;
+			margin: 0 auto;
+		}
+		@media (max-width: 500px) {
+			h1 {
+			font-size: 36px;  
+			}
+			li {
+			display: block;
+			padding: 5px;
+			}
+		}
 	</style>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+
 <body>
 	<header>
-	<img src="http://dash.ga.co/assets/jeff.png">
-	<h1>Jeff's Blog</h1>
+	<img src="https://s1.iconbird.com/ico/1012/PlexIcons/w512h5121350249269youtube.png">
+	<h1>Простой фронт для бложика</h1>
 	<ul>
-		<li><a href="#">About Me</a></li>
-		<li><a href="#">Best Poems</a></li>
-		<li><a href="#">Worst Poems</a></li>
+		<li><a href="../basic_html_page/index.html">Обо мне</a></li>
+		<li><a href="https://vk.com/swrp_reborn">Я тут работал</a></li>
+		<li><a href="#">Рекурсия</a></li>
 	</ul>
 	</header>
-		<article>
-			<h2>VHS umami pop-up trust fund</h2>
-			<p>
-				Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo     Park. Street art swag brunch, next level roof party Schlitz hella organic       keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1,       meggings biodiesel Portland High Life cray tumblr retro.
-			</p>
-			<button>Like</button>
-		</article>
-		<article>
-			<h2>Sartorial synth Echo Park, roof party</h2>
-			<p>
-				chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.
-			</p>
-		<button>Like</button>
-		</article>
-		<article>
-			<h2>Forage food truck keytar master cleanse</h2>
-			<p>
-				ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid
-			</p>
-			<button>Like</button>
-		</article>
+	<article>
+		<h2>Не стоит вскрывать эту тему</h2>
+		<p>
+			Написал hello world и калькулятор, — вот и молодец. На этом стоп. Не стоит вскрывать эти конпеляторы и гитхабы. Это тебе не колидоры вычистлительных центров НАСА, даже не датацентры ГУГОЛ, не уютненькие офисы ФЕЙСБУКА. В сферу IT лучше не лезть. Серьезно, любой из вас будет жалеть. Лучше закройте Хабрахабр и забудьте, что тут писалось. Это все вранье, чтобы привлечь как можно больше новых макак на рабочие места и создать демпинг зарплат. Я вполне понимаю, что данным сообщением вызову дополнительный интерес у воротил из Cisco, SAP и IBM, но хочу сразу предостеречь пытливых — стоп. Зарплаты у IT-шников очень унылые. Остальным их просто не дают.
+		</p>
+		<button>Тупа лайк</button>
+	</article>
 
-	<script>$("button").on("click", function(){alert("clicked!")})</script>
+	<script>
+		$( "button" ).click(function() {
+			alert("Like");
+		});
+	</script>
 </body>
